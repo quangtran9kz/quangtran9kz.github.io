@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YUMMY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/ico-food.png">
+    <link rel="stylesheet" type="text/css" href="./css/madebyme.css" />
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</head>
+<body>
+ <div class="headertop">
+        <ul class="headertop-content ">
+            <li class="left">
+                <a href="./Home.html">
+                <img class="img-logo left" src="./image/restaurant.png" alt="What To Eat" />
+                <span class="logoText left">Yummy</span>
+                </a>
+            </li>
+            <li class="left">
+                <input id="input"  placeholder="Tìm kiếm.." type="text" />
+                <img id="search"  onclick="check()" src="./image/search.png"/>
+
+            </li>
+            <li class="left">
+                <div >
+                    <span id="where">Địa điểm:
+                    <select>
+                        <option>Tp.HCM</option>
+                        <option>Hà Nội</option>
+                        <option>Cần Thơ</option>
+                    </select>
+                    </span>
+                </div>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="user"><img src="./image/user.png" alt="User"/>
+                    <div class="tooltiptext usetip">
+                        <div>Bé Tâm</div>
+                        <div>19/06/1996</div>
+                        <div>Long An</div>
+                      <div><img class="icon" src="./image/yumface.png" /></div> 
+                        
+                    </div>
+                </a>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="cart"><img src="./image/cart.png" alt="Giỏ hàng"/>
+                    <div class="tooltiptext carttip">
+                       Hiện tại chưa có đơn hàng nào
+                      <div><img class="icon" src="./image/sadface.png" /></div> 
+                    </div>
+                </a>
+            </li>
+            <li id="download" class="right">Tải ứng dụng &nbsp;<a href="#######"><img class="app"src="./image/android.png" alt="Android"/></a> &nbsp; <a href="#######"><img class="app" src="./image/apple.png" alt="IOS"/></a></li>
+        </ul>
+ </div>
+ <div class="header">
+        <ul class="menu">
+            <li class="menu-content left">
+                    <a href="Home.html">TRANG CHỦ </a>
+                </li>
+                <li class="menu-content left">
+                    <a href="Food.html">MÓN ĂN </a>
+                    <ul class="menu-items">
+                            <li class="menu-item">
+                                <a href="VietNamFood.html">VIỆT NAM</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="VietNamFood.html">ÂU MỸ</a>
+                            </li>
+                            <li class="menu-item">
+                                    <a href="VietNamFood.html">HÀN QUỐC</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="VietNamFood.html">NHẬT BẢN</a>
+                        </li>
+                        </ul>
+                </li>
+                <li class="menu-content left">
+                        <a href="MadeByMe.html">VÀO BẾP</a>
+                </li>
+                <li class="menu-content left">
+                    <a href="News.html">TIN TỨC</a>
+                </li>
+                <li class="menu-content left">
+                    <a href="About.html">GIỚI THIỆU</a>
+                </li> 
+            
+        </ul>
+        <div class="thongbao">
+                <span><img class="shipper" src="./image/shipper.png" /><span id="thongbaoText">Khuyến mãi từ ngày 10/4 đến hết ngày 20/4: Giao hàng miễn phí đối với khách hàng đặt có hóa đơn từ 100 nghìn. Nhanh tay đặt hàng ngay thôi!</span></span>
+    	</div>
+    </div>
+    <div class="bar"><a href="Home.html">Trang chủ</a>&nbsp&nbsp&nbsp>&nbsp&nbsp&nbsp<a href="MadeByMe.html">Vào bếp</a></div>
+    <div class="content">
+    	<img src="image/dinner1.jpg"/>
+        <div>
+        	<ul class="items">
+                <li>
+                     <ul class="item">
+                           <li><a href="#"><img src="image/taiheo.jpg"/></a></li> 
+                           <li>
+                               <a href="#">
+                               Mách bạn cách làm món tai heo ngâm dấm ăn vặt cực đã 
+                               </a>
+                                <p>
+                                Nếu đã quá quen với món tai heo ngâm dấm thì bạn phải làm theo ngay công thức này, đảm bảo ai ăn cũng mê
+                                </p>
+                           </li>
+                           <li> <a href="#">Xem thêm >></a></li>
+                        </ul>
+                    </li>
+           		<li>
+                    <ul class="item">
+                       <li><a href="#"><img src="image/samboluong.png"/></a></li> 
+                       <li>
+                           <a href="#">
+                         Nắng nóng lên tự làm món chè sâm bổ lượng giải nhiệt mùa hè
+                          </a>
+                            <p>
+                          Một món chè đơn giản từ nguyên liệu đến cách chế biến thì bạn không thể bỏ qua món sâm bổ lượng này đâu nhé.
+                            </p>
+                       </li>
+                       <li> <a href="#">Xem thêm >></a></li>
+                    </ul>
+                </li>
+            	
+              	<li>
+                    <ul class="item">
+                       <li><a href="#"><img src="image/thachbi.jpg"/></a></li> 
+                       <li>
+                           <a href="#">
+                            Công thức thạch trái cây khiến người "không hảo ngọt" cũng phải mê
+							</a>
+                            <p>
+                         Thạch trái cây là món ăn mát giải nhiệt rất tốt trong những ngày nắng nóng.
+                            </p>
+                       </li>
+                        <li> <a href="#">Xem thêm >></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="item">
+                       <li><a href="#"><img src="image/bonglan.jpg"/></a></li> 
+                       <li>
+                           <a href="#">
+                            Cách làm bánh bông lan phô mai bằng nồi cơm điện
+                            </a>
+                            <p>
+                           Chẳng cần tới lò nướng bạn hoàn toàn có thể làm bánh bông lan phô mai bằng nồi cơm điện mà vẫn mịn mượt, bông xốp đẹp mắt như thường đấy! 
+                            </p>
+                       </li>
+                        <li> <a href="#">Xem thêm >></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="item">
+                       <li><a href="#"><img src="image/vitnuong.jpg"/></a></li> 
+                       <li>
+                           <a href="#">
+                           Cuối tuần đãi cả nhà bằng món Vịt sốt cam ngon lạ này ai cũng phải khen
+                            </a>
+                            <p>
+                           Vịt sốt cam với vị thơm ngậy của vịt hòa quyện cùng vị chua chua ngọt ngọt của sốt sẽ làm bạn không thể chối từ. 
+                            </p>
+                       </li>
+                        <li> <a href="#">Xem thêm >></a></li>
+                    </ul>
+                </li> 
+            </ul>
+            <div class="page">Trang &nbsp <a href="#">1</a><a href="#">2</a><a href="#">3</a></div>
+        </div>
+    </div>	
+    <div class="footer">
+        <div class="footer-left left">
+            <a href="###########">Yummy là gì?</a>
+            <a href="###########">Liên hệ</a>
+            <a href="###########">Đối tác</a>
+            <a href="###########">Quảng cáo</a>
+            <a href="###########">Quy chế hoạt động</a>
+            <a href="###########">Tuyển dụng</a>
+            <a href="###########">YumShip.vn</a>
+        </div>
+        <div class="footer-mid left">
+            <div class="element">
+            <img src="./image/Y.png"/>
+            </div>
+            <div class="element">
+                <img src="./image/u.png"/>
+            </div>
+            <div class="element">
+                <img src="./image/m.png"/>
+            </div>
+            <div class="element">
+                <img src="./image/m.png"/>
+            </div>
+            <div class="element ">
+                <img src="./image/Y.png"/>
+            </div>
+        </div>
+        <div class="footer-right left">
+            <h2>Follow Us</h2>
+            <div>
+                <a href="############"><img class="left" src="./image/fb.png" alt="Facebook"/>&nbsp;Facebook</a>
+                <a href="############"><img class="left" src="./image/youtube.png" alt="Youtube"/>&nbsp;Youtube</a>
+                <a href="############"><img class="left" src="./image/ins.png" alt="Instagram"/>&nbsp;Instagram</a>
+                <a href="############"><img class="left" src="./image/twitter.png" alt="Twitter"/>&nbsp;Twitter</a>
+            </div>
+        </div>
+        <!-- <div class="heart"></div> -->
+    </div>
+    <div title="Về đầu trang" id="top-up">
+        <img id="upIcon" src="./image/up.png" width="50px" height="50px" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YUMMY</title>
+    <link rel="shortcut icon" href="./image/ico-food.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/food.css" />
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</head>
+
+<body>
+    <div class="headertop">
+        <ul class="headertop-content ">
+            <li class="left">
+                <a href="./Home.html">
+                    <img class="img-logo left" src="./image/restaurant.png" alt="What To Eat" />
+                    <span class="logoText left">Yummy</span>
+                </a>
+            </li>
+            <li class="left">
+                <input id="input" placeholder="Tìm kiếm.." type="text" />
+                <img id="search" onclick="check()" src="./image/search.png" />
+
+            </li>
+            <li class="left">
+                <div>
+                    <span id="where">Địa điểm:
+                        <select>
+                            <option>Tp.HCM</option>
+                            <option>Hà Nội</option>
+                            <option>Cần Thơ</option>
+                        </select>
+                    </span>
+                </div>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="user">
+                    <img src="./image/user.png" alt="User" />
+                    <div class="tooltiptext usetip">
+                        <div>Bé Tâm</div>
+                        <div>19/06/1996</div>
+                        <div>Long An</div>
+                        <div>
+                            <img class="icon" src="./image/yumface.png" />
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="cart">
+                    <img src="./image/cart.png" alt="Giỏ hàng" />
+                    <div class="tooltiptext carttip">
+                        Hiện tại chưa có đơn hàng nào
+                        <div>
+                            <img class="icon" src="./image/sadface.png" />
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li id="download" class="right">Tải ứng dụng &nbsp;
+                <a href="#######">
+                    <img class="app" src="./image/android.png" alt="Android" />
+                </a> &nbsp;
+                <a href="#######">
+                    <img class="app" src="./image/apple.png" alt="IOS" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <ul class="menu">
+            <li class="menu-content left">
+                <a href="Home.html">TRANG CHỦ </a>
+            </li>
+            <li class="menu-content left">
+                <a href="Food.html">MÓN ĂN </a>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">VIỆT NAM</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">ÂU MỸ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">HÀN QUỐC</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">NHẬT BẢN</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-content left">
+                <a href="MadeByMe.html">VÀO BẾP</a>
+            </li>
+            <li class="menu-content left">
+                <a href="News.html">TIN TỨC</a>
+            </li>
+            <li class="menu-content left">
+                <a href="About.html">GIỚI THIỆU</a>
+            </li>
+
+        </ul>
+        <div class="thongbao">
+            <span>
+                <img class="shipper" src="./image/shipper.png" />
+                <span id="thongbaoText">Khuyến mãi từ ngày 10/4 đến hết ngày 20/4: Giao hàng miễn phí đối với khách hàng đặt có hóa đơn từ 100 nghìn.
+                    Nhanh tay đặt hàng ngay thôi!</span>
+            </span>
+        </div>
+    </div>
+    <div class="bar">
+        <a href="Home.html">Trang chủ</a>&nbsp&nbsp&nbsp>&nbsp&nbsp&nbsp
+        <a href="Food.html">Món ăn</a>
+    </div>
+    <div class="content">
+        <img src="image/food.jpg" />
+        <div class="sologan">
+            <p>
+                Mắt thẫn thờ, bụng trống rỗng, tim rối bời vì không ăn gì ở đâu? Đừng lo, Yummy có hết!
+            </p>
+        </div>
+        <ul class="items">
+            <div class="foodname1">Món ăn Việt Nam
+                <img class="flag" src="image/vietnam.png" />
+            </div>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="image/com-tam-cali.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Cơm tấm Cali
+                    </div>
+                    <div>126 Hồng Bàng Q5, TP.HCM</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/banhcuon.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Bánh cuốn Tây Hồ
+                    </div>
+                    <div>393 Sư Vạn Hạnh, P3, Q10, TP.HCM"</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/banhcanh.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Bánh canh cua Hoàng Lan
+                    </div>
+                    <div>484 Vĩnh Viễn, Q10, TP.HCM"</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/bunbo.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Bún Bò Sông Hương
+                    </div>
+                    <div>65 Gò Dầu,P.Tân Quý,Q.Tân Phú</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <a href="#" class="foodname2">Xem thêm >> </a>
+        </ul>
+        <ul class="items">
+            <div class="foodname1">Món ăn Âu Mỹ
+                <img class="flag" src="image/usa.png" />
+            </div>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/beef.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        BeefSteak TiTi
+                    </div>
+                    <div>67/4/118 Vũ Huy Tấn,P11 ...</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/macdonald.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Macdonald Nguyễn Kiệm
+                    </div>
+                    <div>371 Nguyễn Kiệm, P.3, Gò Vấp ..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/kfc.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        KFC Quang Trung
+                    </div>
+                    <div>88/1 Quang Trung , P3 , Gò Vấp..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/mi.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Paste Paradise
+                    </div>
+                    <div>213 Phan Xích Long P11 TpHCM</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <a href="#" class="foodname2">Xem thêm >> </a>
+        </ul>
+        <ul class="items">
+            <div class="foodname1">Món ăn Hàn Quốc
+                <img class="flag" src="image/korea.png" />
+            </div>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/comtron.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Cơm trộn 2 Cô
+                    </div>
+                    <div>250 Lê Văn Sỹ, P. 1, Quận Tân Bình..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/kimbap.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Kimbap Mara
+                    </div>
+                    <div>558 Sư Vạn Hạnh , P.8 , Q.10..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/suon.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Sườn nướng Bilga
+                    </div>
+                    <div>356/2 Nguyễn Trường Tộ , P2..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/kimchi.jpg" alt="Sản phẩm" title="Bánh canh cua" />
+                    <div class="foodname">
+                        Kimchi Tươi
+                    </div>
+                    <div>201 Võ Văn Ngân, P.Trường Thọ..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <a href="#" class="foodname2">Xem thêm >> </a>
+        </ul>
+        <ul class="items">
+            <div class="foodname1">Món ăn Nhật Bản
+                <img class="flag" src="image/japan.png" />
+            </div>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/shabu.jpg" alt="Sản phẩm" title="Shabu Shabu" />
+                    <div class="foodname">
+                        Shabu-Shabu ScVivo City
+                    </div>
+                    <div>1058 Nguyễn Văn Linh,P. Tân Phong..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="DetailFood.html">
+                    <img src="./image/sushi.jpg" alt="Sản phẩm" title="Sushi" />
+                    <div class="foodname">
+                        The Sushi Bar
+                    </div>
+                    <div>99 Xa lộ Hà Nội PP.An Phú, Quận 2..</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/udon.jpg" alt="Sản phẩm" title="Udon" />
+                    <div class="foodname">
+                        Marukame Udon
+                    </div>
+                    <div>300 Đường 3 Tháng 2, Quận 10, TP. HCM</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <li>
+                <a href="DetailFood.html">
+                    <img src="./image/ramen.jpg" alt="Sản phẩm" title="Ramen" />
+                    <div class="foodname">
+                        Goku Raku Ramen
+                    </div>
+                    <div>241 Lý Tự Trọng , Q.1 , Tp.HCM</div>
+                    <span class="right">55&hearts;</span>
+                </a>
+            </li>
+            <a href="#" class="foodname2">Xem thêm >> </a>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="footer-left left">
+            <a href="###########">Yummy là gì?</a>
+            <a href="###########">Liên hệ</a>
+            <a href="###########">Đối tác</a>
+            <a href="###########">Quảng cáo</a>
+            <a href="###########">Quy chế hoạt động</a>
+            <a href="###########">Tuyển dụng</a>
+            <a href="###########">YumShip.vn</a>
+        </div>
+        <div class="footer-mid left">
+            <div class="element">
+                <img src="./image/Y.png" />
+            </div>
+            <div class="element">
+                <img src="./image/u.png" />
+            </div>
+            <div class="element">
+                <img src="./image/m.png" />
+            </div>
+            <div class="element">
+                <img src="./image/m.png" />
+            </div>
+            <div class="element ">
+                <img src="./image/Y.png" />
+            </div>
+        </div>
+        <div class="footer-right left">
+            <h2>Follow Us</h2>
+            <div>
+                <a href="############">
+                    <img class="left" src="./image/fb.png" alt="Facebook" />&nbsp;Facebook</a>
+                <a href="############">
+                    <img class="left" src="./image/youtube.png" alt="Youtube" />&nbsp;Youtube</a>
+                <a href="############">
+                    <img class="left" src="./image/ins.png" alt="Instagram" />&nbsp;Instagram</a>
+                <a href="############">
+                    <img class="left" src="./image/twitter.png" alt="Twitter" />&nbsp;Twitter</a>
+            </div>
+        </div>
+        <!-- <div class="heart"></div> -->
+    </div>
+    <div title="Về đầu trang" id="top-up">
+        <img id="upIcon" src="./image/up.png" width="50px" height="50px" />
+    </div>
+</body>
+
+</html>

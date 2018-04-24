@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YUMMY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./image/ico-food.png">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/about.css" />
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</head>
+
+<body>
+    <div class="headertop">
+        <ul class="headertop-content ">
+            <li class="left">
+                <a href="./Home.html">
+                    <img class="img-logo left" src="./image/restaurant.png" alt="What To Eat" />
+                    <span class="logoText left">Yummy</span>
+                </a>
+            </li>
+            <li class="left">
+                <input id="input" placeholder="Tìm kiếm.." type="text" />
+                <img id="search" onclick="check()" src="./image/search.png" />
+
+            </li>
+            <li class="left">
+                <div>
+                    <span id="where">Địa điểm:
+                        <select>
+                            <option>Tp.HCM</option>
+                            <option>Hà Nội</option>
+                            <option>Cần Thơ</option>
+                        </select>
+                    </span>
+                </div>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="user">
+                    <img src="./image/user.png" alt="User" />
+                    <div class="tooltiptext usetip">
+                        <div>Bé Tâm</div>
+                        <div>19/06/1996</div>
+                        <div>Long An</div>
+                        <div>
+                            <img class="icon" src="./image/yumface.png" />
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+            <li class="right">
+                <a class="tooltip" href="#####" id="cart">
+                    <img src="./image/cart.png" alt="Giỏ hàng" />
+                    <div class="tooltiptext carttip">
+                        Hiện tại chưa có đơn hàng nào
+                        <div>
+                            <img class="icon" src="./image/sadface.png" />
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li id="download" class="right">Tải ứng dụng &nbsp;
+                <a href="#######">
+                    <img class="app" src="./image/android.png" alt="Android" />
+                </a> &nbsp;
+                <a href="#######">
+                    <img class="app" src="./image/apple.png" alt="IOS" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <ul class="menu">
+            <li class="menu-content left">
+                <a href="Home.html">TRANG CHỦ </a>
+            </li>
+            <li class="menu-content left">
+                <a href="Food.html">MÓN ĂN </a>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">VIỆT NAM</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">ÂU MỸ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">HÀN QUỐC</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="VietNamFood.html">NHẬT BẢN</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-content left">
+                <a href="MadeByMe.html">VÀO BẾP</a>
+            </li>
+            <li class="menu-content left">
+                <a href="News.html">TIN TỨC</a>
+            </li>
+            <li class="menu-content left">
+                <a href="About.html">GIỚI THIỆU</a>
+            </li>
+
+        </ul>
+        <div class="thongbao">
+            <span>
+                <img class="shipper" src="./image/shipper.png" />
+                <span id="thongbaoText">Khuyến mãi từ ngày 10/4 đến hết ngày 20/4: Giao hàng miễn phí đối với khách hàng đặt có hóa đơn từ 100 nghìn.
+                    Nhanh tay đặt hàng ngay thôi!</span>
+            </span>
+        </div>
+    </div>
+    </div>
+    <div class="bar">
+        <a href="Home.html">Trang chủ</a>&nbsp&nbsp&nbsp>&nbsp&nbsp&nbsp
+        <a href="About.html">Giới thiệu</a>
+    </div>
+    <div class="main">
+        <div style="height: 100%;">
+            <div class="article">
+                <div class="question">Yummy là gì ?</div>
+                <div class="answer">Yummy là sàn giao dịch thương mại điện tử, cung cấp dịch vụ đặt món, hàng hóa - giao tận nơi rất tiện lợi
+                    trên cả máy tính các tính năng hữu ích như đặt theo nhóm hay giao ngay trong 1 giờ. Dù là sáng sớm, trưa
+                    nắng, xế chiều hay buổi tối, Yummy đều có thể đáp ứng nhu cầu của bạn thật nhanh chóng chỉ với vài thao
+                    tác đơn giản.</div>
+            </div>
+            <div class="article">
+                <div class="question">Tìm kiếm dễ dàng</div>
+                <div class="answer">
+                    Công cụ tìm kiếm thông minh bằng cách gõ: tên địa điểm, hoặc địa chỉ, hoặc tên đường, hoặc tên món ăn, hoặc mục đích, hoặc
+                    tên khu vực. Hệ thống tìm kiếm sử dụng gợi ý & xem nhanh thông tin, giúp bạn tìm địa điểm nhanh nhất</div>
+            </div>
+            <div class="article">
+                <div class="question">Phân loại rõ ràng</div>
+                <div class="answer"> Yummy phân loại các địa điểm ra rất chi tiết: theo mục đích, loại hình, món ăn, giá cả, loại ẩm thực... Điều
+                    này giúp cộng đồng lọc địa điểm theo mục đích của mình rất nhanh chóng.</div>
+            </div>
+            <div class="article">
+                <div class="question">Nhiệm vụ của Yummy</div>
+                <div class="answer">Yummy là cầu nối giữa người đăng bán và người tìm đồ ăn. Và mỗi thành viên trong Yummy đều đóng vai trò quan
+                    trọng để chiếc cầu nối ấy trở nên vững chắc hơn.</div>
+            </div>
+            <div class="article">
+                <div class="question">Đơn hàng của bạn sẽ được bảo quản như thế nào ?</div>
+                <div class="answer">Yummy sẽ bảo quản đơn của bạn bằng túi & thùng để chống nắng mưa, giữ nhiệt... trên đường đi một cách tốt
+                    nhất.</div>
+            </div>
+        </div>
+        <div id="map" style="width:50%;height:350px;position:relative;margin:0 auto;"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left left">
+            <a href="###########">Yummy là gì?</a>
+            <a href="###########">Liên hệ</a>
+            <a href="###########">Đối tác</a>
+            <a href="###########">Quảng cáo</a>
+            <a href="###########">Quy chế hoạt động</a>
+            <a href="###########">Tuyển dụng</a>
+            <a href="###########">YumShip.vn</a>
+        </div>
+        <div class="footer-mid left">
+            <div class="element">
+                <img src="./image/Y.png" />
+            </div>
+            <div class="element">
+                <img src="./image/u.png" />
+            </div>
+            <div class="element">
+                <img src="./image/m.png" />
+            </div>
+            <div class="element">
+                <img src="./image/m.png" />
+            </div>
+            <div class="element ">
+                <img src="./image/Y.png" />
+            </div>
+        </div>
+        <div class="footer-right left">
+            <h2>Follow Us</h2>
+            <div>
+                <a href="############">
+                    <img class="left" src="./image/fb.png" alt="Facebook" />&nbsp;Facebook</a>
+                <a href="############">
+                    <img class="left" src="./image/youtube.png" alt="Youtube" />&nbsp;Youtube</a>
+                <a href="############">
+                    <img class="left" src="./image/ins.png" alt="Instagram" />&nbsp;Instagram</a>
+                <a href="############">
+                    <img class="left" src="./image/twitter.png" alt="Twitter" />&nbsp;Twitter</a>
+            </div>
+        </div>
+        <!-- <div class="heart"></div> -->
+    </div>
+    <div title="Về đầu trang" id="top-up">
+        <img id="upIcon" src="./image/up.png" width="50px" height="50px" />
+    </div>
+</body>
+
+</html>
